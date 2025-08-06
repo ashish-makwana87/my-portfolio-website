@@ -1,9 +1,16 @@
-import Image from "next/image";
+import AboutMe from "@/components/home/AboutMe";
+import SocialLinks from "@/components/home/SocialLinks";
+import ProjectsList from "@/components/projects/ProjectsList";
+
+
 
 export default function Home() {
+
   return (
     <div>
-      <h1 className=" text-7xl">hello</h1>
+      <AboutMe />
+      <ProjectsList />
+      <SocialLinks />
     </div>
   );
 }
