@@ -33,3 +33,7 @@ export const projectsData: ProjectsData[]  = [{
       "https://github.com/ashish-makwana87/nextjs-property-rental-project",
     link: "https://nextjs-property-rental-project.vercel.app/",
   },]
+
+
+
+  export const skills = ['React', 'Tailwind CSS', 'TypeScript', 'MongoDB', 'React', 'Tailwind CSS', 'TypeScript', 'MongoDB', 'React', 'Tailwind CSS', 'TypeScript', 'MongoDB']

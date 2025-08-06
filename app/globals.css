@@ -7,6 +7,7 @@
   .alignment {
     @apply mx-auto max-w-6xl lg:max-w-7xl px-8;
   }
+
 }
 
 @theme inline {
@@ -51,15 +52,15 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.2077 0.0398 265.75);
-  --foreground: oklch(0.9275 0.0129 266.7);
+  --background: oklch(0.2144 0.05 258.71);
+  --foreground: oklch(0.884 0.0457 270.43);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.8062 0.1072 188.47);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
+  --secondary: oklch(0.6603 0.0473 272.36);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
