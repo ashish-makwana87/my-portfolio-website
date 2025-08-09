@@ -9,10 +9,10 @@
   }
 
   .activePage {
-    @apply text-sm px-4 py-2 text-foreground bg-foreground/20 font-medium rounded hover:bg-foreground/40 hover:cursor-pointer}
+    @apply text-sm px-2 py-2 md:px-4 text-foreground bg-foreground/20 font-medium rounded hover:bg-foreground/40 hover:cursor-pointer}
 
   .projectPage {
-    @apply text-sm px-4 py-2 text-foreground font-medium hover:bg-foreground/10 hover:cursor-pointer hover:rounded}
+    @apply text-sm px-2 py-2 md:px-4 text-foreground font-medium hover:bg-foreground/10 hover:cursor-pointer hover:rounded}
 }
 
 @theme inline {

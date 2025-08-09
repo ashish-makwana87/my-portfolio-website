@@ -9,15 +9,14 @@ import Pagination from './Pagination';
 
 function ProjectsList() {
    
-  const [pageIndex, setPageIndex] = useState(1)
-
-  const totalProjects = projectsData.length
+  const [currentPage, setCurrentPage] = useState<number>(1);
   
+  const totalProjects = projectsData.length;
   
   return (
     <section className='alignment py-8 md:py-14'>
       {/* projects container */}
-      <div className='px-8 md:px-12'>
+      <div className='px-0 md:px-12'>
 
       {/* projects header */}
       <div className='py-4 border-b-1 border-gray-700 '>
@@ -86,7 +85,7 @@ function ProjectsList() {
           );
         })}
       </div>
-      <Pagination totalProjects={totalProjects} pageIndex={pageIndex} setPageIndex={setPageIndex} />
+      <Pagination totalProjects={totalProjects} currentPage={currentPage} setCurrentPage={setCurrentPage} />
       </div>
     </section>
   )

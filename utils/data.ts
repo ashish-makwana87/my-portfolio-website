@@ -10,7 +10,7 @@ type ProjectsData = {
 export const projectsData: ProjectsData[] = [
   {
     id: 1,
-    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1743274923/dasdasd_yutmlt.jpg",
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1754759983/p1_qkclbm.jpg",
     title: "Next.js Property Rental Project",
     skills: [
       "react",
@@ -30,7 +30,7 @@ export const projectsData: ProjectsData[] = [
   },
   {
     id: 2,
-    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1743274923/dasdasd_yutmlt.jpg",
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1754760018/e1_h5pjsz.jpg",
     title: "Next.js Property Rental Project",
     skills: [
       "react",
@@ -50,7 +50,7 @@ export const projectsData: ProjectsData[] = [
   },
   {
     id: 3,
-    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1743274923/dasdasd_yutmlt.jpg",
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1754759983/p1_qkclbm.jpg",
     title: "Next.js Property Rental Project",
     skills: [
       "react",
@@ -70,7 +70,7 @@ export const projectsData: ProjectsData[] = [
   },
   {
     id: 4,
-    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1743274923/dasdasd_yutmlt.jpg",
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1754760018/e1_h5pjsz.jpg",
     title: "Next.js Property Rental Project",
     skills: [
       "react",

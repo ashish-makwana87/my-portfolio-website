@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 function SocialLinks() {
   return (
-    <section className='fixed bottom-4 md:bottom-8 left-5 md:left-8'>
+    <section className='hidden md:block md:fixed md:bottom-6 md:left-4'>
       <div className="flex flex-col gap-4">
       <p>
       </p>

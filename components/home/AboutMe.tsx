@@ -7,7 +7,7 @@ import HeroImg from "@/public/code.png";
 function AboutMe() {
   return (
     <section className='alignment py-8 md:py-14'>
-      <div className='px-8 md:px-12 grid grid-cols-1 md:grid-cols-5 lg:grid-cols-6 gap-y-6 gap-x-8'>
+      <div className='px-0 md:px-12 grid grid-cols-1 md:grid-cols-5 lg:grid-cols-6 gap-y-6 gap-x-8'>
         <div className='md:col-span-5 lg:col-span-4'>
           <h1 className='text-4xl md:text-5xl lg:text-[3.6rem] tracking-normal'>
             Ashish Makwana

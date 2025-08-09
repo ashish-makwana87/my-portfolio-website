@@ -4,7 +4,7 @@ import React from "react";
 function Navbar() {
   return (
     <section className='border-b border-foreground/20'>
-      <div className='px-5 md:px-8 flex justify-between items-center h-20'>
+      <div className='px-8 md:px-4 lg:mx-10 flex justify-between items-center h-20'>
         <h6 className='text-primary font-bold tracking-wider text-xl md:text-2xl'>
           AM
         </h6>
