@@ -35,5 +35,4 @@ export const projectsData: ProjectsData[]  = [{
   },]
 
 
-
-  export const skills = ['React', 'Tailwind CSS', 'TypeScript', 'MongoDB', 'React', 'Tailwind CSS', 'TypeScript', 'MongoDB', 'React', 'Tailwind CSS', 'TypeScript', 'MongoDB']
+  export const skills = ['Next.js', 'React.js', 'Node.js', 'Express.js', 'REST APIs', 'Prisma ORM', 'MongoDB', 'TypeScript', 'Javascript', 'Tailwind CSS', 'Redux.js']

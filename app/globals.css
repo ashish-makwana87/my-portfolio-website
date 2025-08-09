@@ -7,7 +7,6 @@
   .alignment {
     @apply mx-auto max-w-6xl lg:max-w-7xl px-8;
   }
-
 }
 
 @theme inline {
@@ -149,6 +148,6 @@
   }
 
   p {
-    @apply text-sm md:text-xl;
+    @apply text-sm md:text-base lg:text-[1.2rem];
   }
-}
+} 

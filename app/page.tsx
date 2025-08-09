@@ -1,6 +1,6 @@
 import AboutMe from "@/components/home/AboutMe";
 import SocialLinks from "@/components/home/SocialLinks";
-import ProjectsList from "@/components/projects/ProjectsList";
+
 
 
 
