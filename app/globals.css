@@ -7,6 +7,12 @@
   .alignment {
     @apply mx-auto max-w-6xl lg:max-w-7xl px-8;
   }
+
+  .activePage {
+    @apply text-sm px-4 py-2 text-foreground bg-foreground/20 font-medium rounded hover:bg-foreground/40 hover:cursor-pointer}
+
+  .projectPage {
+    @apply text-sm px-4 py-2 text-foreground font-medium hover:bg-foreground/10 hover:cursor-pointer hover:rounded}
 }
 
 @theme inline {
@@ -57,7 +63,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.8062 0.1072 188.47);
+  --primary: oklch(0.8389 0.1153 191.72);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.6603 0.0473 272.36);
   --secondary-foreground: oklch(0.205 0 0);

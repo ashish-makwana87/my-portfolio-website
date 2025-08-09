@@ -10,7 +10,7 @@ function AboutMe() {
       <div className='px-8 md:px-12 grid grid-cols-1 md:grid-cols-5 lg:grid-cols-6 gap-y-6 gap-x-8'>
         <div className='md:col-span-5 lg:col-span-4'>
           <h1 className='text-4xl md:text-5xl lg:text-[3.6rem] tracking-normal'>
-            Ashish Makwana.
+            Ashish Makwana
           </h1>
           <h3 className='text-secondary md:text-[1.4rem] mt-2 normal-case'>
             Next.js & MERN Full Stack Developer
@@ -27,7 +27,7 @@ function AboutMe() {
           <Image
             src={HeroImg}
             alt='coding'
-            className='w-[80%] h-auto object-cover'
+            className='w-[60%] h-auto object-cover'
           />
         </div>
       </div>
