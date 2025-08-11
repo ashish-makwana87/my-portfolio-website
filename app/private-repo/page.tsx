@@ -11,7 +11,7 @@ export default function page() {
         agreement(NDA) signed with the client.
       </p>
       <Button className='bg-foreground text-background hover:bg-white' asChild>
-        <Link href='/#projectsList'>Back to portfolio</Link>
+        <Link href='/#portfolio'>Back to portfolio</Link>
       </Button>
     </div>
   );

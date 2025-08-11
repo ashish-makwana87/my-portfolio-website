@@ -9,7 +9,7 @@ function Navbar() {
           AM
         </h6>
         <div className='flex gap-x-4 md:gap-x-8'>
-          <Link href='/' className='text-sm md:text-base hover:text-primary'>
+          <Link href='#portfolio' className='text-sm md:text-base hover:text-primary'>
             Portfolio
           </Link>
           <Link href='/' className='text-sm md:text-base hover:text-primary'>

@@ -8,15 +8,18 @@ import { useState } from 'react';
 import Pagination from './Pagination';
 
 
-function ProjectsList() {
-   
+function ProjectsList() {   
   const [currentPage, setCurrentPage] = useState<number>(1);
-
-
+  
+  //calculating index and filtering projects data
+  const startIndex = (currentPage - 1) * 7;
+  const endIndex = currentPage * 7; 
+  
+  const newProjectsData = projectsData.slice(startIndex, endIndex);
   const totalProjects = projectsData.length;
   
   return (
-    <section id='projectsList' className='alignment py-8 md:py-14'>
+    <section id='portfolio' className='alignment py-8 md:py-14'>
       {/* projects container */}
       <div className='px-0 md:px-12'>
 
@@ -40,7 +43,7 @@ function ProjectsList() {
 
       {/* projects list */}
       <div className='py-4'>
-        {projectsData.map((item) => {
+        {newProjectsData.map((item) => {
           return (
             <div
               key={item.id}

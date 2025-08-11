@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 type PaginationProps = {
@@ -10,8 +9,7 @@ type PaginationProps = {
 
 function Pagination({totalProjects, currentPage, setCurrentPage}: PaginationProps) {
   
-  const totalPages = Math.ceil(83 / 10)
-  const paginationArray = Array.from({length: totalPages}, (_, index) => index + 1)
+  const totalPages = Math.ceil(49 / 7)
  
   // previous and next page handlers
   const prevPage = () => {
@@ -36,13 +34,13 @@ function Pagination({totalProjects, currentPage, setCurrentPage}: PaginationProp
    setCurrentPage(newPage)
   }
 
-// displaying page buttons based on conditions
+// add page button function
  const addPageButton = ({pageNumber, activeClass}: {pageNumber: number, activeClass: boolean}) => {
 
   return <button key={pageNumber} type='button' className={`projectPage ${activeClass && 'activePage'} `} onClick={() => setCurrentPage(pageNumber) }>{pageNumber}</button>
  }
 
-
+// displaying page buttons based on conditions
  const renderPageButtons = () => {
   
   const pageButtons: React.ReactNode[]  = []; 
@@ -50,21 +48,19 @@ function Pagination({totalProjects, currentPage, setCurrentPage}: PaginationProp
  //if total pages are more than 4 
   if (totalPages > 4) {
    
-  // first two buttons 
+  // displaying first three buttons 
   pageButtons.push(addPageButton({pageNumber: 1, activeClass: currentPage === 1}));
   pageButtons.push(addPageButton({pageNumber: 2, activeClass: currentPage === 2}));
-  
-  if(pageButtons.length > 1) {
   pageButtons.push(<span className='projectPage' key='dots-1'>...</span>);
-  }
  
   
-  // current button (apart from first two and last two)
+  // 4th button on condition 
   if(currentPage !== 1 && currentPage !== 2 && currentPage !== totalPages - 1 
     && currentPage !== totalPages) {
   pageButtons.push(addPageButton({pageNumber: currentPage, activeClass: true}));
   }
- 
+  
+  //5th button on condition 
   if(pageButtons.length > 3) {
   pageButtons.push(<span className='projectPage' key='dots-2'>...</span>);
   }
@@ -73,18 +69,15 @@ function Pagination({totalProjects, currentPage, setCurrentPage}: PaginationProp
   pageButtons.push(addPageButton({pageNumber: totalPages - 1, activeClass: currentPage === totalPages - 1}));
   pageButtons.push(addPageButton({pageNumber: totalPages, activeClass: currentPage === totalPages}))
 
-
   } else {
+     //if total pages are less than 4 
     pageButtons.push(addPageButton({pageNumber: 1, activeClass: currentPage === 1}));
   pageButtons.push(addPageButton({pageNumber: 2, activeClass: currentPage === 2}));
   pageButtons.push(addPageButton({pageNumber: 3, activeClass: currentPage === 3}));
   pageButtons.push(addPageButton({pageNumber: 4, activeClass: currentPage === 4}));
   }
 
-  
-
  return pageButtons; 
-
  }
 
   return (
