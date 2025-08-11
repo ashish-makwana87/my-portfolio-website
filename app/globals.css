@@ -9,10 +9,12 @@
   }
 
   .activePage {
-    @apply text-sm px-2 py-2 md:px-4 text-foreground bg-foreground/20 font-medium rounded hover:bg-foreground/40 hover:cursor-pointer}
+    @apply text-sm px-2 py-2 md:px-4 text-foreground bg-foreground/20 font-medium rounded hover:bg-foreground/40 hover:cursor-pointer;
+  }
 
   .projectPage {
-    @apply text-sm px-2 py-2 md:px-4 text-foreground font-medium hover:bg-foreground/10 hover:cursor-pointer hover:rounded}
+    @apply text-sm px-2 py-2 md:px-4 text-foreground font-medium hover:bg-foreground/10 hover:cursor-pointer hover:rounded;
+  }
 }
 
 @theme inline {
@@ -63,7 +65,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.8389 0.1153 191.72);
+  --primary: oklch(0.9077 0.1414 174.34);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.6603 0.0473 272.36);
   --secondary-foreground: oklch(0.205 0 0);
@@ -154,6 +156,6 @@
   }
 
   p {
-    @apply text-sm md:text-base lg:text-[1.2rem];
+    @apply text-sm md:text-base;
   }
-} 
+}

@@ -7,14 +7,16 @@ import { FiExternalLink } from "react-icons/fi";
 import { useState } from 'react';
 import Pagination from './Pagination';
 
+
 function ProjectsList() {
    
   const [currentPage, setCurrentPage] = useState<number>(1);
-  
+
+
   const totalProjects = projectsData.length;
   
   return (
-    <section className='alignment py-8 md:py-14'>
+    <section id='projectsList' className='alignment py-8 md:py-14'>
       {/* projects container */}
       <div className='px-0 md:px-12'>
 
@@ -44,23 +46,23 @@ function ProjectsList() {
               key={item.id}
               className='grid grid-cols-4 md:grid-cols-7 lg:grid-cols-12 gap-x-6 py-4 border-b-1 border-gray-700'
             >
-              <div className='relative w-32 h-18 hidden lg:block lg:col-span-2'>
+              <div className='hidden relative w-32 h-18 lg:block lg:col-span-2'>
                 <Image
                   src={item.img}
                   alt={item.title}
                   fill
                   className='object-cover rounded'
                 />
-              </div>
+              </div> 
               <h6 className='text-gray-200 col-span-3 md:col-span-2 lg:col-span-2 font-semibold'>
                 {item.title}
               </h6>
-              <div className='hidden md:col-span-4 lg:col-span-6 md:flex md:flex-wrap md:gap-x-2 gap-y-2 pr-2'>
+              <div className='hidden md:col-span-4 lg:col-span-6 md:flex md:flex-wrap md:items-center md:gap-x-2 gap-y-2 pr-2'>
                 {item.skills.map((skill, index) => {
                   return (
                     <span
                       key={index}
-                      className='text-primary font-semibold bg-primary/10 py-2 px-3 rounded-full text-[0.75rem] capitalize'
+                      className='text-primary font-semibold normal-case bg-primary/10 py-2 px-3 rounded-full text-[0.75rem]'
                     >
                       {skill}
                     </span>
@@ -68,14 +70,14 @@ function ProjectsList() {
                 })}
               </div>
               <div className="className='col-span-1 md:col-span-1 lg:col-span-2 flex justify-start flex-wrap gap-x-3">
-              <Link
+              {item.github && <Link
                 href={item.github}
                 target='_blank'
               >
                 <FaGithub className='w-5 h-5 text-gray-200  text-sm hover:text-primary' />
-              </Link>
+              </Link>}
               <Link
-                href={item.github}
+                href={item.url}
                 target='_blank'
               >
                 <FiExternalLink className='w-5 h-5 text-gray-200  text-sm hover:text-primary' />
