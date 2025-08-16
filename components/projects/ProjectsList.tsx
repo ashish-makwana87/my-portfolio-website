@@ -24,7 +24,7 @@ function ProjectsList() {
       <div className='px-0 md:px-12'>
 
       {/* projects header */}
-      <div className='py-4 border-b-1 border-gray-700 '>
+      <div className='py-4 border-b-1 border-foreground/20'>
       <div className='grid grid-cols-4 md:grid-cols-7 lg:grid-cols-12 gap-x-6 justify-center items-center'>
         <h4 className='hidden lg:block lg:col-span-2 font-semibold '>
           Project
@@ -47,7 +47,7 @@ function ProjectsList() {
           return (
             <div
               key={item.id}
-              className='grid grid-cols-4 md:grid-cols-7 lg:grid-cols-12 gap-x-6 py-4 border-b-1 border-gray-700'
+              className='grid grid-cols-4 md:grid-cols-7 lg:grid-cols-12 gap-x-6 py-4 border-b-1 border-foreground/20'
             >
               <div className='hidden relative w-32 h-18 lg:block lg:col-span-2'>
                 <Image
