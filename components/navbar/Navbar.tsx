@@ -3,7 +3,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <section className='border-b border-foreground/20'>
+    <section className='border-b border-foreground/20 bg-background sticky top-0 z-10'>
       <div className='px-8 md:px-4 lg:mx-10 flex justify-between items-center h-20'>
         <h6 className='text-primary font-bold tracking-wider text-xl md:text-2xl'>
           AM
@@ -12,10 +12,10 @@ function Navbar() {
           <Link href='#portfolio' className='text-sm md:text-base hover:text-primary'>
             Portfolio
           </Link>
-          <Link href='/' className='text-sm md:text-base hover:text-primary'>
+          <Link href='#experience' className='text-sm md:text-base hover:text-primary'>
             Experience
           </Link>
-          <Link href='/' className='text-sm md:text-base hover:text-primary'>
+          <Link href='#contact' className='text-sm md:text-base hover:text-primary'>
             Contact
           </Link>
         </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { IoCaretForward } from "react-icons/io5";
 
 
@@ -5,9 +6,11 @@ type ExperienceProps ={
  title: string,
  duration: string,
  description?: string[]
+ link?: string
+ linkText?: string
 }
 
-function ExperienceDetails({title, duration, description}: ExperienceProps) {
+function ExperienceDetails({title, duration, description, link, linkText}: ExperienceProps) {
 
  console.log(description);
  
@@ -21,6 +24,9 @@ function ExperienceDetails({title, duration, description}: ExperienceProps) {
         <span className='p-1 text-primary'><IoCaretForward /></span><p>{item}</p>
        </div>
        })}
+       {link && <div className='px-0 mb-3 md:mb-4 md:px-6 flex gap-3 lg:max-w-4xl'>
+        <span className='p-1 text-primary'><IoCaretForward /></span><Link href={link} target="_blank"><p className=" underline">{linkText}</p></Link>
+       </div>}
       </div>
   )
 }

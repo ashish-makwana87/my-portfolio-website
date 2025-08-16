@@ -19,7 +19,7 @@ function ProjectsList() {
   const totalProjects = projectsData.length;
   
   return (
-    <section id='portfolio' className='alignment py-8 md:py-14'>
+    <section id='portfolio' className='alignment py-8 md:py-14 scroll-mt-16'>
       {/* projects container */}
       <div className='px-0 md:px-12'>
 
