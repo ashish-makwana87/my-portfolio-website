@@ -26,16 +26,16 @@ function ProjectsList() {
       {/* projects header */}
       <div className='py-4 border-b-1 border-gray-700 '>
       <div className='grid grid-cols-4 md:grid-cols-7 lg:grid-cols-12 gap-x-6 justify-center items-center'>
-        <h4 className='text-gray-200 hidden lg:block lg:col-span-2 font-semibold '>
+        <h4 className='hidden lg:block lg:col-span-2 font-semibold '>
           Project
         </h4>
-        <h4 className='text-gray-200 col-span-3 md:col-span-2 lg:col-span-2 font-semibold '>
+        <h4 className='col-span-3 md:col-span-2 lg:col-span-2 font-semibold '>
           Title
         </h4>
-        <h4 className='text-gray-200 hidden md:block md:col-span-4 lg:col-span-6 font-semibold '>
+        <h4 className='hidden md:block md:col-span-4 lg:col-span-6 font-semibold '>
           Built With
         </h4>
-        <h4 className='text-gray-200 col-span-1 md:col-span-1 lg:col-span-2 font-semibold'>
+        <h4 className='col-span-1 md:col-span-1 lg:col-span-2 font-semibold'>
           URL
         </h4>
       </div>
@@ -57,7 +57,7 @@ function ProjectsList() {
                   className='object-cover rounded'
                 />
               </div> 
-              <h6 className='text-gray-200 col-span-3 md:col-span-2 lg:col-span-2 font-semibold'>
+              <h6 className='col-span-3 md:col-span-2 lg:col-span-2 font-semibold'>
                 {item.title}
               </h6>
               <div className='hidden md:col-span-4 lg:col-span-6 md:flex md:flex-wrap md:items-center md:gap-x-2 gap-y-2 pr-2'>
@@ -77,13 +77,13 @@ function ProjectsList() {
                 href={item.github}
                 target='_blank'
               >
-                <FaGithub className='w-5 h-5 text-gray-200  text-sm hover:text-primary' />
+                <FaGithub className='w-5 h-5 text-sm hover:text-primary' />
               </Link>}
               <Link
                 href={item.url}
                 target='_blank'
               >
-                <FiExternalLink className='w-5 h-5 text-gray-200  text-sm hover:text-primary' />
+                <FiExternalLink className='w-5 h-5 text-sm hover:text-primary' />
               </Link>
               </div>
             </div>

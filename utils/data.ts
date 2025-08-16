@@ -2,17 +2,17 @@ import { nanoid } from "nanoid";
 
 
 export const skills: string[] = [
+  "React",
   "Next.js",
-  "React.js",
   "Node.js",
   "Express.js",
+  "MongoDB",
   "REST APIs",
   "Prisma ORM",
-  "MongoDB",
-  "TypeScript",
   "Javascript",
+  "TypeScript",
   "Tailwind CSS",
-  "Redux.js",
+  "Redux",
 ];
 
 type ProjectSkills = "Next.js" | "React" | "Javascript" | "Node" | "Express" | "Clerk Auth" | "Prisma" | "MongoDB" | "Supabase" |"Zod" |"TypeScript" | "Shadcn" | "Tailwind CSS" | "Mongoose" | "Express-validator" | "Bcrypt" | "JWT" | "React" |"React-router" | "Vite" | "React-pdftotext" | "Framer motion" | "GitHub Copilot" | "Cursor" | "GraphQL" | "Apollo client" | "Recharts" | "Wix" | "WordPress" | "Elementor"; 
@@ -71,7 +71,7 @@ export const projectsData: ProjectsData[] = [
   {
     id: nanoid(),
     img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1754917674/4_larysa_egy0go.jpg",
-    title: "Photography Website",
+    title: "Lifestyle Photography Website",
     skills: [
       "Framer motion",
        "Next.js",
@@ -262,6 +262,17 @@ export const projectsData: ProjectsData[] = [
     url: "https://carthel.media/",
   },
 
+{
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1754927503/w1_yv79ns.jpg",
+    title: "Burger Outlet Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.tbfc.co/",
+  },
+
   {
     id: nanoid(),
     img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1754926719/p2_zldwbi.jpg",
@@ -284,22 +295,10 @@ export const projectsData: ProjectsData[] = [
     url: "https://alimrealestate.com/",
   },
 
-
-  {
-    id: nanoid(),
-    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1754927503/w1_yv79ns.jpg",
-    title: "Burger Outlet Website",
-    skills: [
-      "Wix"
-    ],
-    github: null,
-    url: "https://www.tbfc.co/",
-  },
-
   {
     id: nanoid(),
     img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1754927506/w4_ynir8n.jpg",
-    title: "Consultancy Website",
+    title: "Consultancy Services Website",
     skills: [
       "Wix"
     ],
@@ -321,6 +320,28 @@ export const projectsData: ProjectsData[] = [
 
   {
     id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755017323/w7_vri2vh.jpg",
+    title: "Healthcare Recruitment Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.recmasters.in/",
+  },
+ 
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755343914/w30_dsbqvj.jpg",
+    title: "Career Consultancy Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.mercury.coach/",
+  },
+
+  {
+    id: nanoid(),
     img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1754927819/w6_hhzf8l.jpg",
     title: "Investment Management Website",
     skills: [
@@ -328,6 +349,28 @@ export const projectsData: ProjectsData[] = [
     ],
     github: null,
     url: "https://www.guardianassetmanagement.in/",
+  },
+ 
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755343235/w25_bhpfsw.jpg",
+    title: "Freight Services Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.caxtonfreight.com/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755342707/w23_wypnyv.jpg",
+    title: "Luxury Hair Salon Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.hairbarponca.com/about",
   },
 
   {
@@ -340,17 +383,249 @@ export const projectsData: ProjectsData[] = [
     github: null,
     url: "https://www.amikuhealth.com/ ",
   },
+ 
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755017792/w12_cogskp.jpg",
+    title: "Flooring Specialist Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.hm-flooring.co.uk/",
+  },
 
   {
     id: nanoid(),
-    img: "/",
-    title: "test",
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755343648/w29_ybukg8.jpg",
+    title: "Real Estate Website",
     skills: [
-      "React",
+      "Wix"
     ],
     github: null,
-    url: "/",
+    url: "https://www.ritiproperties.com/",
+  },
+  
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755017792/w14_z7uaga.jpg",
+    title: "Brand Consultation Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.brandbase.ca/",
   },
 
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755017793/w13_l8ox3t.jpg",
+    title: "LGBTQIAP Center Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.himachalqueerfoundation.org/",
+  },
+
+  
+{
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755343648/w28_s4ynud.jpg",
+    title: "NGO School Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.gamruvillageschool.in/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755343649/w27_c20gbq.jpg",
+    title: "Construction Services Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.nswsports.com.au/",
+  },
+ 
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755343649/w26_k8n4g2.jpg",
+    title: "Construction Services Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.volson.in/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755017792/w11_gaecss.jpg",
+    title: "Personal Financing Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.creditlinks.in/",
+  },
+
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755343915/w31_kuf62h.jpg",
+    title: "Spiritual Consultation Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.yashfoundation.info/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755017323/w10_ilfbzn.jpg",
+    title: "Healthcare Solution Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://sgpdcentre.com/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755342706/w20_ijwghq.jpg",
+    title: "Personal Blog Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.sanspaper.in/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755342706/w21_gurosm.jpg",
+    title: "Life Coaching Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.theboldnesscoach.com/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755344375/w34_eip9bw.jpg",
+    title: "NGO Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.pratima.net/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755344413/w37_du58vt.jpg",
+    title: "Travel Blogger Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.joinedatthetriptours.com/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755342706/w24_qtpwee.jpg",
+    title: "Spiritual Guide Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.manachristiantherapy.com/",
+  },
+  
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755017795/w15_cg81ma.jpg",
+    title: "Housing Construction Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.mparkhomes.com/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755344413/w39_e78ouf.jpg",
+    title: "Wellness Products Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.modernwellnesscanada.com/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755344374/w32_yjsteg.jpg",
+    title: "IT Solutions Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.nits.co/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755344377/w33_ueq8h7.jpg",
+    title: "Industrial Products Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.jptcores.com/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755344394/w35_ts007u.jpg",
+    title: "IT Solutions Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.mscyrigo.com/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755344414/w36_rn2d6d.jpg",
+    title: "Nutrition Services Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.gingerspicehealth.com/",
+  },
+
+  {
+    id: nanoid(),
+    img: "https://res.cloudinary.com/ddulynvdq/image/upload/v1755344412/w38_fck7xt.jpg",
+    title: "Healthcare Products Website",
+    skills: [
+      "Wix"
+    ],
+    github: null,
+    url: "https://www.airbender.com.tw/",
+  },
 ];
 

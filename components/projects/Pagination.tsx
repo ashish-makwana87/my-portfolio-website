@@ -6,10 +6,9 @@ type PaginationProps = {
  setCurrentPage: React.Dispatch<React.SetStateAction<number>>
 }
 
-
 function Pagination({totalProjects, currentPage, setCurrentPage}: PaginationProps) {
-  
-  const totalPages = Math.ceil(49 / 7)
+
+  const totalPages = Math.ceil(totalProjects / 7)
  
   // previous and next page handlers
   const prevPage = () => {
@@ -33,22 +32,21 @@ function Pagination({totalProjects, currentPage, setCurrentPage}: PaginationProp
    
    setCurrentPage(newPage)
   }
-
-// add page button function
+ 
+  // add page button function
  const addPageButton = ({pageNumber, activeClass}: {pageNumber: number, activeClass: boolean}) => {
 
   return <button key={pageNumber} type='button' className={`projectPage ${activeClass && 'activePage'} `} onClick={() => setCurrentPage(pageNumber) }>{pageNumber}</button>
  }
 
-// displaying page buttons based on conditions
+ // displaying page buttons based on conditions
  const renderPageButtons = () => {
   
   const pageButtons: React.ReactNode[]  = []; 
-  
- //if total pages are more than 4 
-  if (totalPages > 4) {
-   
-  // displaying first three buttons 
+ 
+  //if total pages are more than 4 
+  if(totalPages > 4) {
+     // displaying first three buttons 
   pageButtons.push(addPageButton({pageNumber: 1, activeClass: currentPage === 1}));
   pageButtons.push(addPageButton({pageNumber: 2, activeClass: currentPage === 2}));
   pageButtons.push(<span className='projectPage' key='dots-1'>...</span>);
@@ -69,19 +67,19 @@ function Pagination({totalProjects, currentPage, setCurrentPage}: PaginationProp
   pageButtons.push(addPageButton({pageNumber: totalPages - 1, activeClass: currentPage === totalPages - 1}));
   pageButtons.push(addPageButton({pageNumber: totalPages, activeClass: currentPage === totalPages}))
 
-  } else {
-     //if total pages are less than 4 
-    pageButtons.push(addPageButton({pageNumber: 1, activeClass: currentPage === 1}));
-  pageButtons.push(addPageButton({pageNumber: 2, activeClass: currentPage === 2}));
-  pageButtons.push(addPageButton({pageNumber: 3, activeClass: currentPage === 3}));
-  pageButtons.push(addPageButton({pageNumber: 4, activeClass: currentPage === 4}));
+  } else{
+    
+    const pageArr = Array.from({length: totalPages}, (_, index) => index + 1)
+
+    pageArr.forEach((pageNum) => pageButtons.push(addPageButton({pageNumber: pageNum, activeClass: currentPage === pageNum})))
   }
 
- return pageButtons; 
- }
 
-  return (
-    <div className='flex mt-4 md:mt-6'>
+  return pageButtons; 
+ }
+ 
+
+  return (<div className='flex mt-4 md:mt-6'>
       <div className='ml-auto flex gap-x-2 flex-wrap'>
       {totalPages > 4 && <button type='button' className='projectPage' onClick={prevPage}><FaChevronLeft /></button>}
       {renderPageButtons()}
@@ -91,4 +89,4 @@ function Pagination({totalProjects, currentPage, setCurrentPage}: PaginationProp
   )
 }
 
-export default Pagination;
+export default Pagination
