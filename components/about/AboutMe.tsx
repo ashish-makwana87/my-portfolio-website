@@ -16,7 +16,7 @@ function AboutMe() {
           Full Stack Developer - Next.js & MERN
           </h3>
           <p className='text-base md:text-[1.1rem] mt-4 md:mt-8'>
-           Web developer with 10+ years of experience crafting responsive, scalable websites. My interest in web development started back in 2014. Fast-forward to today, I have had the privilege of working with a diverse array of clients covering more than 120 projects.
+          I’m a full-stack developer and web developer with <span className="text-primary">10+</span> years of experience building responsive, scalable websites and web applications. My interest in web development started back in 2014. Fast-forward to today, I have had the privilege of working with a diverse array of clients covering more than <span className="text-primary">120 projects</span>.   
           </p>
           <p className='text-secondary text-base lg:text-[1.1rem] mt-2 mb-4 md:mt-4 md:mb-8'>
             My tech stack includes:{" "}

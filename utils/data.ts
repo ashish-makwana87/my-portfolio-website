@@ -7,6 +7,7 @@ export const skills: string[] = [
   "Node.js",
   "Express.js",
   "MongoDB",
+  "Supabase",
   "REST APIs",
   "Prisma ORM",
   "Javascript",

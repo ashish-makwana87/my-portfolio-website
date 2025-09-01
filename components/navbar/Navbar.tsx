@@ -3,8 +3,8 @@ import React from "react";
 
 function Navbar() {
   return (
-    <section className='border-b border-foreground/20 bg-background sticky top-0 z-10'>
-      <div className='px-8 md:px-4 lg:mx-10 flex justify-between items-center h-20'>
+    <header className='border-b border-foreground/20 bg-background sticky top-0 z-10'>
+      <section className='px-8 md:px-4 lg:mx-10 flex justify-between items-center h-20'>
         <h6 className='text-primary font-bold tracking-wider text-xl md:text-2xl'>
           AM
         </h6>
@@ -19,8 +19,8 @@ function Navbar() {
             Contact
           </Link>
         </div>
-      </div>
-    </section>
+      </section>
+    </header>
   );
 }
 
